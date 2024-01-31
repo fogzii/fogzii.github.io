@@ -1,11 +1,10 @@
-import React, {Component} from "react";
+import React from "react";
 
-class SubHeading extends Component {
-    render() {
-        return (
-            <h2 className="sub-heading"> {this.props.subHeading} </h2>
-        )
-    }
+function SubHeading(props) {
+    return (
+        <h2 className="sub-heading"> {props.subHeading} </h2>
+    )
+
 }
 
 export default SubHeading;

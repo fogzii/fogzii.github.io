@@ -1,11 +1,9 @@
-import React, {Component} from "react";
+import React from "react";
 
-class TitleDescription extends Component {
-    render() {
-        return (
-            <html className="title-description"> {this.props.titleDescription} </html>
-        )
-    }
+function TitleDescription(props) {
+    return (
+        <html className="title-description"> {props.titleDescription} </html>
+    );
 }
 
 export default TitleDescription;
