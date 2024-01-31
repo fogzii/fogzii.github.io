@@ -1,20 +1,67 @@
+body {
+    background-color: black;
+}
+
 html {
     font-size: 10px;
+    font-family: SF-Pro, sans-serif;
+}
+
+p {
+    font-size: 1.6rem;
+    font-family: SF-Pro, sans-serif;
+    color: white;
+    line-height: 1.5;
 }
 
 h1 {
-    font-family: Genera Grotesk;
-    text-align: center;
-    font-size: 13rem;
-    color: black;
+    font-family: Genera Grotesk, sans-serif;
+    font-weight: lighter;
+}
+
+h2 {
+    font-family: Roboto, sans-serif;
 }
 
 @font-face {
     font-family: Genera Grotesk;
-    src: url('./fonts/Genera\ Grotesk\ Heavy.ttf');
+    src: url('../assets/fonts/Genera\ Grotesk\ Heavy.ttf');
 }
 
-.photoGrid {
+@font-face {
+    font-family: SF-Pro;
+    src: url('../assets/fonts/SF-Pro.ttf');
+}
+
+.centered-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    margin: 3rem 0;
+    color: white;
+    font-size: 13rem;
+}
+
+.title-description {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.sub-heading {
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.photo-grid {
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
@@ -23,8 +70,13 @@ h1 {
 
 .figure {
     flex-basis: calc(33.333% - 4rem);
-    border: 1px solid #d3d3d3;
+    border: 1px solid #000000;
     padding: 2rem;
     flex-grow: 1;
     margin: 0 2rem 2rem 2rem;
+}
+
+.photo {
+    width: calc(100% + 4rem);
+    margin: -2rem 0 0 -2rem;
 }

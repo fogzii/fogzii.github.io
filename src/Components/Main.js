@@ -1,27 +1,44 @@
 import React, {Component} from "react";
 import Title from "./Title";
+import PhotoWall from "./PhotoWall";
+import {img1, img2, img3} from "../assets/images";
+import TitleDescription from "./TitleDescription";
+import SubHeading from "./SubHeading";
+
 // import List from "./List";
 
-const posts = [{
-    id: "0",
-    description: "test 1",
-    imageLink: "https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i4eeacaa2dbf12d6d/version/1490299332/most-beautiful-landscapes-in-europe-lofoten-european-best-destinations-copyright-iakov-kalinin.jpg" +
-    "3919321_1443393332_n.jpg"
-    }, {
-    id: "1",
-    description: "test 2",
-    imageLink: "https://s3.india.com/wp-content/uploads/2017/12/rocket.jpg"
-    }, {
-    id: "2",
-    description: "test 3",
-    imageLink: "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/08/24/104670887-VacationExplainsTHUMBWEB.1910x1000.jpg"
-}]
+const posts = [
+    {
+        id: "0",
+        description: "test 1",
+        imageLink: img1
+    },
+    {
+        id: "1",
+        description: "test 2",
+        imageLink: img2
+    },
+    {
+        id: "2",
+        description: "test 3",
+        imageLink: img3
+    }
+]
 
 class Main extends Component {
     render() {
         return (
             <div>
-                <Title title = {'Time to BeReal'}/>
+                <div className="centered-container">
+                    <Title title={'Time to BeReal.'}/>
+                    <TitleDescription titleDescription = {'See what Bowen Xiao has been up to.'}/>
+                </div>
+                <div>
+                    <PhotoWall posts={posts} />
+                    <SubHeading subHeading = {'About'}/>
+                    <SubHeading subHeading = {'Projects'}/>
+                    <SubHeading subHeading = {'Contact Me'}/>
+                </div>
             </div>
         )
     }
