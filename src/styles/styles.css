@@ -1,0 +1,30 @@
+html {
+    font-size: 10px;
+}
+
+h1 {
+    font-family: Genera Grotesk;
+    text-align: center;
+    font-size: 13rem;
+    color: black;
+}
+
+@font-face {
+    font-family: Genera Grotesk;
+    src: url('./fonts/Genera\ Grotesk\ Heavy.ttf');
+}
+
+.photoGrid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.figure {
+    flex-basis: calc(33.333% - 4rem);
+    border: 1px solid #d3d3d3;
+    padding: 2rem;
+    flex-grow: 1;
+    margin: 0 2rem 2rem 2rem;
+}
