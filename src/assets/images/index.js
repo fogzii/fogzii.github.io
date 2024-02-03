@@ -1,5 +1,6 @@
 import img1 from './img-1.jpg';
 import img2 from './img-2.jpg';
 import img3 from './img-3.png';
+import playbutton from './playbutton.png'
 
-export { img1, img2, img3 };
+export { img1, img2, img3, playbutton };

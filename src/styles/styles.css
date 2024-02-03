@@ -34,6 +34,7 @@ h2 {
 }
 
 .centered-container {
+    position: relative;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -43,7 +44,7 @@ h2 {
 }
 
 .title {
-    margin: 3rem 0;
+    margin: 2rem 0;
     color: white;
     font-size: 13rem;
 }
@@ -51,7 +52,8 @@ h2 {
 .title-description {
     color: white;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
     margin: 0 2rem 2rem 2rem;
 }
 
@@ -79,4 +81,51 @@ h2 {
 .photo {
     width: calc(100% + 4rem);
     margin: -2rem 0 0 -2rem;
+}
+
+.image-button {
+    position: absolute;
+    bottom: 150px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.image-button img {
+    width: 70px;
+    transition: transform 0.3s ease;
+}
+
+.image-button:hover img {
+    transform: scale(1.1);
+}
+
+.navigation {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation button {
+    font-family: Roboto, sans-serif;
+    font-size: 2rem;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigation button:hover {
+    background-color: white;
+    color: #282c34;
 }

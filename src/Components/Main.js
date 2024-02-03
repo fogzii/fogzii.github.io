@@ -1,9 +1,11 @@
 import React, {Component} from "react";
 import Title from "./Title";
 import PhotoWall from "./PhotoWall";
-import {img1, img2, img3} from "../assets/images";
+import {img1, img2, img3, playbutton} from "../assets/images";
 import TitleDescription from "./TitleDescription";
 import SubHeading from "./SubHeading";
+import ImageButton from "./ImageButton";
+import Header from "./Header";
 
 // import List from "./List";
 
@@ -30,8 +32,10 @@ class Main extends Component {
         return (
             <div>
                 <div className="centered-container">
+                    <Header />
                     <Title title={'Time to BeReal.'}/>
                     <TitleDescription titleDescription = {'See what Bowen Xiao has been up to.'}/>
+                    <ImageButton src={playbutton} alt="Play Button" />
                 </div>
                 <div>
                     <PhotoWall posts={posts} />
