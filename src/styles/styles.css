@@ -104,9 +104,7 @@ h2 {
 .navigation {
     position: absolute;
     top: 20px;
-    left: 20px;
-    background-color: transparent;
-    color: white;
+    left: 0px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -114,18 +112,36 @@ h2 {
 }
 
 .navigation button {
+    position: relative;
     font-family: Roboto, sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     background-color: transparent;
     border: transparent;
-    color: white;
-    margin-left: 10px;
-    padding: 5px 10px;
+    color: #aaaaaa;
+    margin: 0 2.5rem;
+    padding: 5px 0;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: color 0.8s ease;
 }
 
 .navigation button:hover {
+    color: white;
+}
+
+/* add white line under navigation buttons */
+.navigation button::after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
     background-color: white;
-    color: #282c34;
+    transition: width 0.8s ease;
+}
+
+/* create growing effect from left to right on hover */
+.navigation button:hover::after {
+    width: 100%;
 }

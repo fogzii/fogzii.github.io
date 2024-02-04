@@ -4,10 +4,10 @@ function Header() {
     return (
         <header className="header">
             <div className="navigation">
-                <button>Home</button>
-                <button>About</button>
-                <button>Projects</button>
-                <button>Contact Me</button>
+                <button>HOME</button>
+                <button>ABOUT</button>
+                <button>PROJECTS</button>
+                <button>CONTACT ME</button>
             </div>
         </header>
     );
