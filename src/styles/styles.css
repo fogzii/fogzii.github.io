@@ -85,7 +85,7 @@ h2 {
 
 .image-button {
     position: absolute;
-    bottom: 150px;
+    bottom: 280px;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -93,21 +93,24 @@ h2 {
 }
 
 .image-button img {
-    width: 70px;
+    width: 50px;
     transition: transform 0.3s ease;
 }
 
 .image-button:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .navigation {
-    position: absolute;
-    top: 20px;
-    left: 0px;
-    padding: 20px;
+    position: fixed;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
     align-items: center;
 }
 

@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import Title from "./Title";
 import PhotoWall from "./PhotoWall";
-import {img1, img2, img3, playbutton} from "../assets/images";
+import {img1, img2, img3, camera_gif, camera_static} from "../assets/images";
 import TitleDescription from "./TitleDescription";
 import SubHeading from "./SubHeading";
 import ImageButton from "./ImageButton";
@@ -35,7 +35,7 @@ class Main extends Component {
                     <Header />
                     <Title title={'Time to BeReal.'}/>
                     <TitleDescription titleDescription = {'See what Bowen Xiao has been up to.'}/>
-                    <ImageButton src={playbutton} alt="Play Button" />
+                    <ImageButton src={camera_static} hoverSrc={camera_gif} alt="Play Button" />
                 </div>
                 <div>
                     <PhotoWall posts={posts} />
