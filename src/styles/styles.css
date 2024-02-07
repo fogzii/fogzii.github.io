@@ -84,8 +84,7 @@ h2 {
 }
 
 .image-button {
-    position: absolute;
-    bottom: 280px;
+    position: relative;
     border: none;
     background-color: transparent;
     cursor: pointer;
