@@ -1,22 +1,22 @@
 import React from 'react';
-import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-scroll';
 
 function Header() {
     return (
         <header className="header">
             <div className="navigation">
-                <HashLink to="#home" smooth>
+                <Link activeClass="active" to="home" spy={true} smooth={true} duration={500}>
                     <button>HOME</button>
-                </HashLink>
-                <HashLink to="#about" smooth>
+                </Link>
+                <Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>
                     <button>ABOUT</button>
-                </HashLink>
-                <HashLink to="#projects" smooth>
+                </Link>
+                <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500}>
                     <button>PROJECTS</button>
-                </HashLink>
-                <HashLink to="#contact-me" smooth>
+                </Link>
+                <Link activeClass="active" to="contact-me" spy={true} smooth={true} duration={500}>
                     <button>CONTACT ME</button>
-                </HashLink>
+                </Link>
             </div>
         </header>
     );

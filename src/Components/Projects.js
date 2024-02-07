@@ -3,7 +3,7 @@ import SubHeading from './SubHeading';
 
 function Projects() {
     return (
-        <div id='projects'>
+        <div className="centered-container" id='projects'>
             <SubHeading subHeading = {'Projects'}/>
         </div>
     );

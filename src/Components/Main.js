@@ -1,13 +1,12 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Title from "./Title";
 import PhotoWall from "./PhotoWall";
-import {img1, img2, img3, camera_gif, camera_static} from "../assets/images";
+import { img1, img2, img3, camera_gif, camera_static } from "../assets/images";
 import TitleDescription from "./TitleDescription";
-import SubHeading from "./SubHeading";
 import ImageButton from "./ImageButton";
 import Header from "./Header";
 import { BrowserRouter } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-scroll";
 import About from "./About";
 import Projects from "./Projects";
 import ContactMe from "./ContactMe";
@@ -41,18 +40,16 @@ class Main extends Component {
                     <Header/>
                     <Title title={'Time to BeReal.'}/>
                     <TitleDescription titleDescription = {'See what Bowen Xiao has been up to.'}/>
-                    <HashLink to="#about" smooth>
+                    <Link to="about" spy={true} smooth={true} duration={500}>
                         <ImageButton src={camera_static} hoverSrc={camera_gif} alt="Play Button" />
-                    </HashLink>
+                    </Link>
                 </div>
                 <div>
                     <PhotoWall posts={posts} />
                     <About/>
                     <PhotoWall posts={posts} />
                     <Projects/>
-                    <PhotoWall posts={posts} />
                     <ContactMe/>
-                    <PhotoWall posts={posts} />
                 </div>
             </div>
             </BrowserRouter>

@@ -111,6 +111,7 @@ h2 {
     justify-content: flex-start;
     background-color: black;
     align-items: center;
+    z-index: 1000;
 }
 
 .navigation button {
@@ -146,4 +147,20 @@ h2 {
 /* create growing effect from left to right on hover */
 .navigation button:hover::after {
     width: 100%;
+}
+
+/* style buttons that are active according to the 'spy' property */
+.navigation .active button {
+    color: white;
+}
+
+.navigation .active button::after {
+    width: 100%;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
 }
