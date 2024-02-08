@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Title from "./Title";
-import PhotoWall from "./PhotoWall";
-import { img1, img2, img3, camera_gif, camera_static } from "../assets/images";
+import { camera_gif, camera_static } from "../assets/images";
 import TitleDescription from "./TitleDescription";
 import ImageButton from "./ImageButton";
 import Header from "./Header";
@@ -10,26 +9,6 @@ import { Link } from "react-scroll";
 import About from "./About";
 import Projects from "./Projects";
 import ContactMe from "./ContactMe";
-
-// import List from "./List";
-
-const posts = [
-    {
-        id: "0",
-        description: "test 1",
-        imageLink: img1
-    },
-    {
-        id: "1",
-        description: "test 2",
-        imageLink: img2
-    },
-    {
-        id: "2",
-        description: "test 3",
-        imageLink: img3
-    }
-]
 
 class Main extends Component {
     render() {
@@ -45,9 +24,7 @@ class Main extends Component {
                     </Link>
                 </div>
                 <div>
-                    <PhotoWall posts={posts} />
                     <About/>
-                    <PhotoWall posts={posts} />
                     <Projects/>
                     <ContactMe/>
                 </div>

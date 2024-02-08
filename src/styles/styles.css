@@ -14,6 +14,10 @@ p {
     line-height: 1.5;
 }
 
+p.removeMargin {
+    margin: 0;
+}
+
 h1 {
     font-family: Genera Grotesk, sans-serif;
     font-weight: lighter;
@@ -61,6 +65,7 @@ h2 {
     color: white;
     text-align: center;
     font-size: 5rem;
+    margin: 2rem 0;
 }
 
 .photo-grid {
@@ -163,4 +168,17 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 60px;
+}
+
+.container {
+    width: 18.5%; /* want to make this scale according to viewport*/
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    /* background-color: white; */
+    text-align: center;
+}
+
+.container .slick-slide img {
+    max-width: 100%;
 }
