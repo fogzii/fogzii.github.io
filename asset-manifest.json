@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ae1b649a.css",
+    "main.js": "/static/js/main.e31d15e1.js",
+    "static/media/SF-Pro.ttf": "/static/media/SF-Pro.2f9118d7e608bf94730c.ttf",
+    "static/media/bereal-img3.png": "/static/media/bereal-img3.88b749ab9651db4258bf.png",
+    "static/media/bereal-img2.png": "/static/media/bereal-img2.e1c5ab3f75e3cd0a21f9.png",
+    "static/media/bereal-img1.png": "/static/media/bereal-img1.6f7f41c51b44f711338f.png",
+    "static/media/camera_gif.gif": "/static/media/camera_gif.7e26de190efae3b42983.gif",
+    "static/media/img-1.jpg": "/static/media/img-1.eea3a4b12eb18731f3e2.jpg",
+    "static/media/img-2.jpg": "/static/media/img-2.ea797b35b2dc31c6366e.jpg",
+    "static/media/img-3.png": "/static/media/img-3.9f7b4e0df089fc78fedf.png",
+    "static/media/Genera Grotesk Heavy.ttf": "/static/media/Genera Grotesk Heavy.96dd0c757b908f4be5f5.ttf",
+    "static/media/linkedin.png": "/static/media/linkedin.ede524c518f00324d208.png",
+    "index.html": "/index.html",
+    "main.ae1b649a.css.map": "/static/css/main.ae1b649a.css.map",
+    "main.e31d15e1.js.map": "/static/js/main.e31d15e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae1b649a.css",
+    "static/js/main.e31d15e1.js"
+  ]
+}
