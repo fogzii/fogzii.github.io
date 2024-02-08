@@ -5,7 +5,7 @@ function Header() {
     return (
         <header className="header">
             <div className="navigation">
-                <Link activeClass="active" to="home" spy={true} smooth={true} duration={500}>
+                <Link activeClass="active" to="home" offset={-10} spy={true} smooth={true} duration={500}>
                     <button>HOME</button>
                 </Link>
                 <Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>
